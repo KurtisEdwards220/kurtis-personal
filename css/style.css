@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,15 +8,18 @@
 html {
   height: 100%;
 }
+header {
+  background-color: rgba(0, 0, 0, 0.06);
+}
 body {
   background-color: #333533;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
-header {
-  background-color: rgba(0, 0, 0, 0.06);
-}
+
+/* NAVBAR */
+
 .navbar {
   text-align: center;
 }
@@ -37,6 +42,9 @@ header {
   color: white;
   transition: 0.3s;
 }
+
+/* MAIN */
+
 #intro-text-1 {
   grid-area: left-text;
   font-size: 4rem;
@@ -47,6 +55,7 @@ header {
 #intro-text-2 {
   grid-area: right-text;
   font-size: 4rem;
+  margin-bottom: 50px;
 }
 #intro-text-2 br {
   display: none;
@@ -56,11 +65,6 @@ p {
   color: white;
   font-family: "Lato", sans-serif;
 }
-a {
-  color: white;
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
-}
 #profile-photo {
   grid-area: center-photo;
   display: flex;
@@ -69,10 +73,14 @@ a {
   height: auto;
   margin: auto auto;
 }
+
+/* FOOTER */
+
 footer {
   color: white;
   text-align: center;
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 2.5rem;
   /* background-color: #242423; */
@@ -81,9 +89,19 @@ footer {
 #footer-text {
   font-size: 0.7rem;
   padding: 13px;
+  max-width: 500px;
+  margin: auto;
   display: flex;
   justify-content: space-around;
 }
+a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 768px) {
   .navbar {
     max-width: 200px;
@@ -112,22 +130,5 @@ footer {
   }
   .navbar li {
     padding: 50px;
-  }
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "left-text center-photo right-text";
-    align-items: center;
-  }
-  #intro-text-1 br {
-    display: block;
-  }
-  #intro-text-2 br {
-    display: block;
-  }
-  .footer-text {
-    max-width: 100px;
-    margin: auto;
   }
 }
