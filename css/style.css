@@ -45,28 +45,17 @@ body {
 
 /* MAIN */
 
-#intro-text-1 {
-  grid-area: left-text;
-  font-size: 4rem;
-}
-#intro-text-1 br {
-  display: none;
-}
-#intro-text-2 {
-  grid-area: right-text;
+#main-text {
   font-size: 4rem;
   margin-bottom: 50px;
-}
-#intro-text-2 br {
-  display: none;
 }
 p {
   text-align: center;
   color: white;
   font-family: "Lato", sans-serif;
+  /* max-width: 500px; */
 }
 #profile-photo {
-  grid-area: center-photo;
   display: flex;
   max-height: 780px;
   max-width: 65%;
@@ -130,5 +119,15 @@ a {
   }
   .navbar li {
     padding: 50px;
+  }
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+    margin: auto auto 0 auto;
+  }
+  #main-text {
+    margin-top: 300px;
   }
 }
