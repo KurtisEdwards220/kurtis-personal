@@ -144,6 +144,29 @@ p {
   max-height: 100%;
   max-width: 100%;
 }
+.contact-container {
+  margin-top: 26px;
+}
+.contact-photo {
+  text-align: center;
+  align-items: bottom;
+}
+.fa-linkedin:hover {
+  color: #0f8;
+  transition: 0.3s;
+}
+.fa-github:hover {
+  color: #0f8;
+  transition: 0.3s;
+}
+.fa-envelope:hover {
+  color: #0f8;
+  transition: 0.3s;
+}
+.contact-text {
+  font-size: 1.7rem;
+  padding: 10px;
+}
 
 /* FOOTER */
 
@@ -189,6 +212,9 @@ a {
   .project-container {
     grid-gap: 50px;
   }
+  /* .contact-container {
+    padding: 60px;
+  } */
 }
 @media only screen and (min-width: 1200px) {
   .navbar {
