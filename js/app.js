@@ -25,5 +25,5 @@ const generateQuote = function () {
 };
 window.onload = function () {
   generateQuote();
-  setInterval(generateQuote, 5000);
+  setInterval(generateQuote, 1000);
 };

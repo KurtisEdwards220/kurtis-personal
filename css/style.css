@@ -203,20 +203,23 @@ a {
   .navbar li {
     padding: 50px;
   }
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+    grid-gap: 80px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
   .main-container {
     display: flex;
     justify-content: space-between;
     width: 60%;
     margin: 0 auto 0 auto;
   }
-  .project-container {
-    grid-template-columns: 1fr 1fr;
-    padding: 60px;
-    grid-gap: 80px;
-  }
   #main-text {
     margin-top: 250px;
-    margin-left: 250px;
+    margin-left: 200px;
   }
   #quotes {
     font-size: 3rem;
