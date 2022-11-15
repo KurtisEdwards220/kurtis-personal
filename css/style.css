@@ -11,6 +11,10 @@ html {
 header {
   background-color: rgba(0, 0, 0, 0.06);
 }
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 body {
   background-color: #333533;
   min-height: 400px;
@@ -49,6 +53,23 @@ body {
 
 #main-text {
   margin-top: 25px;
+  /* transition: opacity 5s;
+  opacity: 1; */
+}
+#fade {
+  animation: fade 7s ease infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 #quotes {
   font-size: 1.7rem;
@@ -88,7 +109,6 @@ p {
 #project4-container {
   background-color: #545e75;
   border-radius: 15px;
-  /* max-width: 100%; */
 }
 #project1-container:hover,
 #project2-container:hover,
