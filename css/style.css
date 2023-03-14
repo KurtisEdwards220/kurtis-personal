@@ -124,11 +124,11 @@ p {
 }
 .project-text {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .project-photo {
   border-radius: 15px 15px 0px 0px;
-  height: 90%;
+  max-height: 100%;
   max-width: 100%;
 }
 .contact-container {
